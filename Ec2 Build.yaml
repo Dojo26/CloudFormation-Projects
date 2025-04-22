@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Ec2 build using yaml
+# Resources section
+Resources:
+  yEC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-0100e595e1cc1ff7f"
+      InstanceType: "t2.micro"
+      KeyName: "Ojo1-Core-Key"
